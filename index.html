@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge</title>
+    <link rel="stylesheet" href="colorRanges.css"
+  </head>
+  <body>
+    <form>
+      <label for="RedDial">RED</label>
+      <input
+        type="range"
+        id="RedDial"
+        min="0"
+        max="255"
+        onchange="turnColor()"
+      />
+      <input type="text" id="readRed" size="3" value="0" readonly />
+      <br />
+      <label for="GreenDial">GREEN</label>
+      <input
+        type="range"
+        id="GreenDial"
+        min="0"
+        max="255"
+        onchange="turnColor()"
+      />
+      <input type="text" id="readGreen" size="3" value="0" readonly />
+      <br />
+      <label for="BlueDial">BLUE</label>
+      <input
+        type="range"
+        id="BlueDial"
+        min="0"
+        max="255"
+        onchange="turnColor()"
+      />
+      <input type="text" id="readBlue" size="3" value="0" readonly />
+      <br />
+
+      <div id="square" class="squareColor"></div>
+    </form>
+    <script src="./colors.js"></script>
+  </body>
+</html>
